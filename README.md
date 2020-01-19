@@ -1,4 +1,4 @@
-# Mobile Web Specialist Certification Course
+# Grow with Google 12 month Bootcamp: Front end developer 
 The link to view this app: https://drjwebsitedesign.github.io/mws-restaurant-stage-1/
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
