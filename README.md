@@ -1,8 +1,9 @@
 # Grow with Google 12 month Bootcamp:
-<br/>Front end developer 
+## Front end developer 
+
 The link to view this app: https://drjwebsitedesign.github.io/mws-restaurant-stage-1/
 ---
-#### _Three Stage Course Material Project - Restaurant Reviews_
+## _Three Stage Course Material Project - Restaurant Reviews_
 
 ## Project Overview: Stage 1
 
