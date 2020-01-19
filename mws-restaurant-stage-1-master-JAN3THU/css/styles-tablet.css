@@ -1,0 +1,119 @@
+    /*===== MOBILE 1ST: BEGIN TABLET @MEDIA QUERY =====*/
+
+@media only screen and (min-width:601px) and (max-width:900px){
+/*I ADDED THE 'NAV MENU' BACK TO THE HOME PAGE TO VIEW ON LARGER SCREENS LIKE TABLETS, LAPTOPS, AND DESKTOPS*/  
+    
+    
+            /* ===== BEGIN NAVIGATION ===== */
+nav { 
+    /*modified the nav ui to be more accessible, simpler, cleaner. modified height and background with flexbox.*/
+    display: flex;
+    height: 100px;
+    background: #00ff00;
+    width: 100%;
+    text-align: center;
+}
+nav h1 {
+    margin: auto;
+}
+nav h1 a { 
+    /*modified all property/values for better accessibility*/
+    text-transform: capitalize;
+    color: #0f0f0f;
+    font-size: 24pt;
+    letter-spacing: 10px;
+    font-weight:600;
+}
+nav h1 a:hover{ 
+    /*modified all property/values for better accessibility*/
+    text-transform: capitalize;
+    color: #f0f0f0;
+    font-style:italic;
+    font-size: 24pt;
+    letter-spacing: 10px;
+    font-weight:100;
+}
+#breadcrumb {
+    padding: 10px 40px 16px;
+    list-style: none;
+    background-color: #eee;
+    font-size: 17px;
+    margin: 0;
+    width: calc(50% - 80px);
+}
+     /* Display list items side by side */
+#breadcrumb li {
+    display: inline;
+}
+    /* Add a slash symbol (/) before/behind each list item */
+#breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+    /* Add a color to all links inside the list */
+#breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+    /* Add a color on mouse-over */
+#breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}                /*===== END NAVIGATION =====*/ 
+
+
+    
+                /*===== BEGIN MAP =====*/
+#map {
+    height: 400px;
+    width: 100%;
+    background-color: #ccc;
+}                 /*===== END MAP =====*/   
+    
+
+    
+            /*=== BEGIN RESTAURANT FILTERING ===*/
+.filter-options { 
+    /*modified all property/value styles to follow the @media query flows*/
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    width:100%;
+    height:60px;
+    background-color:#00ff00;    
+    padding-top: 5px;
+    }
+.filter-options h2 { 
+    /*modified all property/value styles to follow the @media query flows*/
+    color: #0f0f0f;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 20px;
+}
+.filter-options select { 
+    /*modified all property/value styles to follow the @media query flows*/
+    background-color: #0f0f0f;
+    border: 2px solid #f0f0f0; 
+    border-radius: 8px;
+    color:#f0f0f0;
+    font-family: Arial,sans-serif;
+    font-size: 13pt;
+    height: 35px;
+    letter-spacing: 5;
+    margin: 10px;
+    padding: 0 10px;
+    width: 50%;
+}
+.filter-options select:focus,
+.filter-options select:hover{ 
+    /*modified all property/value styles to improve accessibility for all users*/
+    background: #f0f0f0;
+    border:2px solid #0f0f0f;
+    border-radius:8px;
+    color: #0f0f0f;
+}     /*===== END RESTAURANT FILTERING =====*/     
+    
+}/*===== MOBILE 1ST: END TABLET @MEDIA QUERY =====*/  

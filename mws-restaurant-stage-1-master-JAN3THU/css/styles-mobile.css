@@ -1,0 +1,130 @@
+    /*===== MOBILE 1ST: BEGIN SMARTPHONE @MEDIA QUERY =====*/
+@media only screen and (min-width:0px) and (max-width:600px){ 
+             
+nav{
+    display: none;
+    /*i deleted the 'header nav container' from the smartphone media query bec that eliminates redundancy, fewer smartphone clicks, and less real estate used in the viewport by the nav's lengthy height. it is also offered in the breadcrumb and both footers. */
+}
+.breadcrumbNav a{
+    font-size:14px;
+}    
+#map {
+    height: 400px;
+    width: 100%;
+    background-color: #ccc;
+}
+.filter-options { 
+    /*modified all property/value styles to follow the @media query flows*/
+    display: flex;
+    flex-direction: row;
+    display:block;   
+    align-items:center;
+    width:100%;
+    height:120px;
+    background-color:#00ff00;    
+    padding-top: 5px;
+    }
+.filter-options h2 { 
+    /*modified all property/value styles to follow the @media query flows*/
+    color: #0f0f0f;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 20px;
+}
+.filter-options select { 
+    /*modified all property/value styles to follow the @media query flows*/ 
+    background-color: #0f0f0f;
+    border: 2px solid #f0f0f0; 
+    border-radius: 8px;
+    color:#f0f0f0;
+    font-family: Arial,sans-serif;
+    font-size: 13pt;
+    height: 30px;
+    letter-spacing: 5;
+    margin: 10px;
+    padding: 0 10px;
+    width: 50%;
+}
+.filter-options select:focus,
+.filter-options select:hover{ 
+    /*modified all property/value styles for better accessibility for all users*/
+    background: #f0f0f0;
+    border:2px solid #0f0f0f;
+    border-radius:5px;
+    color: #0f0f0f;
+}     
+inside{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.inside header{ 
+    width: 100vw;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+header #breadcrumb{
+    background: #00ff00;
+    border: 1px solid green;
+    border-radius: 5px;
+    width: 100vw;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+}
+.inside #map-container{
+    order: 1; 
+    top: 130px; 
+    position: relative;
+    height: 400px;
+    width: 100vw;
+}
+.inside #restaurant-container{
+    order: 2;
+    position: relative;
+    width: 100vw;
+    padding: 140px 5px 0 0;
+    margin: auto;
+    text-align: center;
+}
+.inside #reviews-container{
+    width: 100vw;
+    padding: 5px;
+    margin: auto;
+}
+.inside #footer{
+    order: 3;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+}
+#reviews-list{
+    width: 100vw;
+}
+#reviews-container h2{
+    text-align: center;
+}
+#reviews-list li>p:nth-child(1){
+    width: 50%;
+    align-self: center;
+    color: #009900;
+}
+#reviews-list li>p:nth-child(2){
+    align-self: center;
+    width: 50%;
+    text-align: right;
+    color:#009900;
+}
+#reviews-list li>p:nth-child(3){
+    widows: 100%;
+    color:009900;
+}
+#restaurant-hours td {
+  color:#009900; /*changed colours*/
+}
+    
+}/*===== END SMARTPHONE @MEDIA QUERY ===== */
